@@ -1,0 +1,1162 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500;600;700&display=swap');
+/* font-family: 'Edu NSW ACT Foundation', cursive; */
+
+
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior:smooth !important;
+}
+
+body{
+    width: 100vw;
+    background-color: #fff;
+    position: relative;
+}
+
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* @media(max-width:700px){
+    
+    html{
+        font-size: 62.5%;
+        overflow-x: hidden;
+    }
+    
+    body{
+        min-height: 100vh;
+        width: 100vw;
+        background-color: #fff;
+        overscroll-behavior: none!important;
+        overflow-x: hidden!important;
+        scroll-behavior: smooth!important;
+    }
+    
+} */
+
+
+
+/* ========================================================================================================= */
+/* ++++++++++++++++++++++++NAVIGATION BAR STARTS++++++++++++++++++++++++++++++ */
+
+/* Desktop-Navigation Bar---------- */
+
+.nav-desktop{
+    background-color: #000000;
+    height: 7vh;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: 10000;
+}
+
+.nav-desktop .d-menu{
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+
+}
+.nav-desktop .d-menu div{
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link .nl-div a{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+}
+
+.nl-div a::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 0;
+    left: 50%;
+    bottom: -5px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    transition: all .5s;
+
+}
+.nl-div a:hover::after{
+    width: 100%;
+    left: 0;
+}
+
+.nl-img{
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: none;
+    font-weight: 700;
+}
+.nl-img img{
+    transform: translateY(1.5em);
+    width: 10rem;
+    border-radius: 6rem;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.363);
+}
+
+/* Mobile-Navigation Bar---------- */
+
+.nav-mobile{
+    display: none;
+}
+
+.mobile-navbar-icon[name="close-outline"]{
+    display: none;
+}
+
+@media(max-width:700px){
+    
+    .nav-desktop{
+        display: none;
+    }
+    
+    header{
+        position: relative;
+    }
+
+    .nav-mobile{
+        display: flex;
+        height: 22vh;
+        background-color: #fff;
+        padding: 2rem 5rem;
+        justify-content: space-between;
+    }
+    .logo img{
+        position: relative;
+        z-index: 10;
+        width: 10rem;
+    }
+
+    .menu{
+        list-style:none;
+        gap: 3rem;
+        z-index:1;
+        width: 100vw;
+        height: 100vh;
+        background-color: #50FD62;
+        position: absolute;
+        top: 0;
+        right: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+        transition: all .5s;
+        flex-direction: column;
+    }
+
+    .menu li a{
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: 700;
+        color: #000;
+        padding: 10px 0px;
+    }
+
+    .mobile-navbar-btn{
+        z-index: 5;
+        position: relative;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    .mobile-navbar-icon{
+        height: 4rem;
+        width: 4rem;
+        
+    }
+
+    .active .menu{
+        transform: translateX(0%);
+        
+    }
+
+    .active .mobile-navbar-icon[name="close-outline"]{
+        display: block;
+     }
+    .active .mobile-navbar-icon[name="reorder-three-outline"]{
+        display: none;
+     } 
+
+}
+
+.display-none{
+    display: none;
+}
+.display-flex{
+    display: flex;
+}
+
+/* ========================================================================================================= */
+/* ++++++++++++++++++++++++NAVIGATION BAR ENDS++++++++++++++++++++++++++++++ */
+
+/* ========================================================================================================= */
+/* ++++++++++++++++++++++++HEADER STARTS++++++++++++++++++++++++++++++ */
+
+.header-container{
+    padding: 6rem 0;
+    min-height: 100vh;
+    background: linear-gradient(to right, #727373,rgba(0, 0, 0, 0.158)),url(./Images/f-img-05.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.head-cont h1{
+    margin: 0 0 10rem 5rem;
+    font-size: 7rem;
+}
+.head-cont h1 span{
+    color: #50FD62;   
+}
+
+.all-quotes{
+    margin-bottom: 8rem;
+}
+
+.quotes{
+    margin-left: 5rem;
+    width: 60vw;
+    padding: 1rem; 
+}
+.quotes p{
+    font-size: 2.5rem;
+    color: #7cf087; 
+}
+.quotes h3{
+    text-align: right;
+    font-size: 2.8rem;
+    color: #fff;
+}
+
+
+
+
+@media (max-width:700px) {
+    
+.head-cont h1{
+    margin: 0 0 1rem 3rem;
+    font-size: 3rem;
+    
+}
+
+.all-quotes{
+    margin-bottom: 1rem;
+}
+
+.quotes{
+    margin-left: 0rem;
+    width: 100vw;
+    padding: 3rem;
+    
+}
+.quotes p{
+    font-size: 1.4rem;
+    color: #FED4A5;
+    
+}
+.quotes h3{
+    text-align: right;
+    font-size: 1.8rem;
+    color: #fff;
+
+}
+}
+
+
+
+/* ========================================================================================================= */
+/* ++++++++++++++++++++++++HEADER ENDS++++++++++++++++++++++++++++++ */
+
+/* ========================================================================================================= */
+/* ++++++++++++++++++++++++SECTION-02 STARTS++++++++++++++++++++++++++++++ */
+
+.section-02
+{
+    background: linear-gradient(#cdcdcd63,#7e7e7e42),url(./Images/O_H_01.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.section-02 h1{
+    padding: 3rem;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.container-02{
+    padding: 3rem;
+    gap: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.container-02-01{
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25rem;
+    transition: all .75s;
+}
+
+/* ================================================================= */
+.container-02-01-01{
+    background: linear-gradient(#2f111195,#0000007d),url(./Images/f-img-01.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-02-01-02{
+    background: linear-gradient(#2f111195,#0000007d),url(./Images/f-img-02.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-02-01-03{
+    background: linear-gradient(#2f111195,#0000007d),url(./Images/f-img-03.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-02-01-04{
+    background: linear-gradient(#2f111195,#0000007d),url(./Images/f-img-04.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-02-01-05{
+    background: linear-gradient(#2f111195,#0000007d),url(./Images/f-img-05.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-02-01-06{
+    background: linear-gradient(#2f111195,#0000007d),url(./Images/f-img-06.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-02-01-07{
+    background: linear-gradient(#2f111195,#0000007d),url(./Images/f-img-07.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-02-01-08{
+    background: linear-gradient(#2f111195,#0000007d),url(./Images/f-img-08.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-02-01-09{
+    background: linear-gradient(#2f111195,#0000007d),url(./Images/f-img-09.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-02-01-10{
+    background: linear-gradient(#2f111195,#0000007d),url(./Images/f-img-10.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ======================================================== */
+
+
+.container-02-03-01{
+    background: linear-gradient(#2f111195,#0000007d),url(./Images/nepal.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-02-03-02{
+    background: linear-gradient(#2f111195,#0000007d),url(./Images/bangladesh.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-02-03-03{
+    background: linear-gradient(#2f111195,#0000007d),url(./Images/dubai.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-02-03-04{
+    background: linear-gradient(#2f111195,#0000007d),url(./Images/qatar.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* ======================================================================== */
+
+
+.container-02-02-01{
+    background: linear-gradient(#2f111195,#0000007d),url(./Images/delhi.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-02-02-02{
+    background: linear-gradient(#2f111195,#0000007d),url(./Images/kerala.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-02-02-03{
+    background: linear-gradient(#2f111195,#0000007d),url(./Images/kolkata.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-02-02-04{
+    background: linear-gradient(#2f111195,#0000007d),url(./Images/jaipur.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-02-02-05{
+    background: linear-gradient(#2f111195,#0000007d),url(./Images/banglore.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-02-02-06{
+    background: linear-gradient(#2f111195,#0000007d),url(./Images/chennai.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-02-02-07{
+    background: linear-gradient(#2f111195,#0000007d),url(./Images/lucknow.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-02-02-08{
+    background: linear-gradient(#2f111195,#0000007d),url(./Images/agra.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-02-02-09{
+    background: linear-gradient(#2f111195,#0000007d),url(./Images/mumbai.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-02-02-10{
+    background: linear-gradient(#2f111195,#0000007d),url(./Images/srinagar.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-02-02-11{
+    background: linear-gradient(#2f111195,#0000007d),url(./Images/kashmir.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ================================================================= */
+
+.container-02-01 h3{
+    font-size: 3rem;
+    color: #fff;
+    transition: all .75s;
+}
+
+.container-02-01:hover h3{
+    font-size: 4rem;
+    transform: translateY(-2rem);
+}
+
+.container-02-01:hover{
+    transform: translateY(0.5rem);
+}
+
+
+
+@media(max-width:700px){
+    .container-02{
+        padding: 3rem;
+        gap: 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =================== FACILITY STARS  ================ */
+
+/* ================================================================= */
+.container-02-04-01{
+    background: linear-gradient(#2f111195,#0000007d),url(./Images/facility-img-01.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-02-04-02{
+    background: linear-gradient(#2f111195,#0000007d),url(./Images/facility-img-02.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-02-04-03{
+    background: linear-gradient(#2f111195,#0000007d),url(./Images/facility-img-03.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-02-04-04{
+    background: linear-gradient(#2f111195,#0000007d),url(./Images/facility-img-04.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-02-04-05{
+    background: linear-gradient(#2f111195,#0000007d),url(./Images/facility-img-05.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-02-04-06{
+    background: linear-gradient(#2f111195,#0000007d),url(./Images/facility-img-06.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-02-04-07{
+    background: linear-gradient(#2f111195,#0000007d),url(./Images/facility-img-07.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-02-04-08{
+    background: linear-gradient(#2f111195,#0000007d),url(./Images/facility-img-08.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-02-04-09{
+    background: linear-gradient(#2f111195,#0000007d),url(./Images/facility-img-09.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-02-04-10{
+    background: linear-gradient(#2f111195,#0000007d),url(./Images/facility-img-10.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* ======================================================== */
+
+
+
+/* ========================================================================================================= */
+/* ++++++++++++++++++++++++SECTION-02 ENDS++++++++++++++++++++++++++++++ */
+
+
+/* ========================================================================================================= */
+/* ++++++++++++++++++++++++SECTION-03 STARTS++++++++++++++++++++++++++++++ */
+
+.section-03{
+    background: linear-gradient(#070e03c7,#080c018e),url(./Images/O_H_01.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.head-03 h1{
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    text-align: center;
+    padding: 3rem 0;
+    font-size: 6rem;
+    color: #fff;
+}
+
+.head-03 h1 span{
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    color: #50FD62;
+
+}
+
+
+.sub-section-03{
+    
+    min-height: 80vh;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.sub-head-03 h1{
+    width: 50vw;
+    font-size: 7rem;
+
+}
+.sub-head-03 h1{
+    color: #fff;
+
+}
+.sub-head-03 h1 span{
+    color: #50FD62;
+
+}
+
+.hero-03-up-right{
+
+    height: 30rem;
+    width: 50rem;
+    overflow: hidden;
+    margin: 0 4rem 0 0;
+    border-radius: 1rem;
+}
+
+.hero-03-up-right img{
+    height: 30rem;
+    width: 50rem;
+    transition: all 1s;
+}
+
+.hero-03-up-right img:hover{
+    transform: scale(1.1);
+}
+
+@media(max-width:700px){
+
+    .section-03{
+        min-height: 50vh;
+    }
+
+
+
+    .head-03 h1{
+        padding: 2rem 0;
+        font-size: 2.5rem;
+    }
+
+    .sub-section-03{
+    
+        min-height: 50vh;
+        padding: 2rem;
+        flex-direction: column;
+        gap: 3rem;
+    }
+    
+    .sub-head-03 h1{
+        font-size: 3rem;
+        text-align: center;
+    
+    }
+    
+    .yt-video-03{
+        height: 20rem;
+        width: 80vw;
+    }
+    
+}
+
+
+/* ========================================================================================================= */
+/* ++++++++++++++++++++++++SECTION-03 ENDS++++++++++++++++++++++++++++++ */
+
+/* ========================================================================================================= */
+/* ++++++++++++++++++++++++COMMON STARTS++++++++++++++++++++++++++++++ */
+
+.common-header{
+    min-height: 50vh;
+    background: linear-gradient(#070e03c7,#080c018e),url(./Images/O_H_02.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.common-heading h1{
+    text-align: center;
+    font-size: 5rem;
+    color: #fff;
+}
+
+/* ========================================================================================================= */
+/* ++++++++++++++++++++++++COMMON ENDS++++++++++++++++++++++++++++++ */
+
+/* ========================================================================================================= */
+/* ++++++++++++++++++++++++CONTACT STARTS++++++++++++++++++++++++++++++ */
+
+
+.contact-info{
+    background-color: #def3e0;
+    min-height: 100vh;
+    display: flex;
+
+}
+
+.contact-left{
+    min-height: 100vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info{
+    min-height: 40rem;
+    width: 50rem;
+    background-color: #fff;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+    transition: all .4s;
+}
+.info:hover{
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+.info h2{
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.ico-details{
+    margin: 5rem 0;
+    display: flex;
+
+}
+
+.ico-details p{
+    font-size: 2rem;
+}
+.ico-details a{
+    text-decoration: none;
+    /* color: #000; */
+    font-size: 2rem;
+}
+
+.contact-icon{
+    height: 2rem;
+    width: 2rem;
+    margin:0 2rem;
+    align-self: center;
+}
+
+.contact-right{
+    min-height: 100vh;
+    width: 50%;
+    display: flex;
+    justify-content:left;
+    align-items:center;
+}
+
+.contact-form-01{
+    padding: 10rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+
+.contact-form-input{
+    padding: 1rem;
+    margin: 2rem;
+    width: 100%;
+}
+
+.contact-btn-01{
+    background-color: #50FD62;
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+}
+
+
+
+@media (max-width:700px) {
+    .contact-info{
+        display: block;
+    }
+
+    .contact-left{
+        min-height: 60vh;
+        padding: 2rem;
+        width: 100%;
+    }
+
+
+    .contact-right{
+        min-height: 60vh;
+        padding: 2rem;
+        width: 100%;
+        justify-content:center;
+        padding-bottom: 3rem;
+
+    }
+}
+
+
+/* ========================================================================================================= */
+/* ++++++++++++++++++++++++CONTACT ENDS++++++++++++++++++++++++++++++ */
+
+
+
+/* ========================================================================================================= */
+/* ++++++++++++++++++++++++WHO ARE WE STARTS++++++++++++++++++++++++++++++ */
+
+.waw-main-para p{
+    padding: 4rem 3rem;
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+
+/* ========================================================================================================= */
+/* ++++++++++++++++++++++++WHO ARE WE ENDS++++++++++++++++++++++++++++++ */
+
+
+
+/* ========================================================================================================= */
+/* ++++++++++++++++++++++++OUR FRUITS STARTS++++++++++++++++++++++++++++++ */
+
+.of-container-01{
+    padding-left: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.of-container-01-left img{
+    height: 300px;
+    width: 500px;
+    transition: all 0.75s;
+}
+
+.of-container-01-left{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+
+
+.of-container-01-left img:hover{
+    scale: 1.1;
+}
+
+.of-container-01-right{
+    padding: 5rem;
+}
+
+
+.of-container-01-right h1{
+    margin: 2rem 0;
+    font-size: 5rem;
+}
+.of-container-01-right h3{
+    font-size: 2.5rem;
+}
+.of-container-01-right p{
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+
+
+
+/* ========================================================================================================= */
+/* ++++++++++++++++++++++++OUR FRUITS ENDS++++++++++++++++++++++++++++++ */
+
+
+
+/* ========================================================================================================= */
+/* ++++++++++++++++++++++++GALLERY STARTS++++++++++++++++++++++++++++++ */
+
+.gallery-section-01 h1{
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 3rem;
+    color: #50FD62;  
+}
+
+
+.gallery-photos{
+    position: relative;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem;
+
+}
+
+.gallery-photo-img{
+    height: 12rem;
+    width: 14rem;
+    cursor: pointer;
+    transition:.4s;
+    
+}
+.gallery-photo-img:hover{
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
+
+}
+
+
+.gallery-photo-img-hover{
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: 34;
+    height: 100vh;
+    width: 100vw;
+}
+
+@media (max-width:700px) {
+    .gallery-photos{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* ========================================================================================================= */
+/* ++++++++++++++++++++++++GALLERY ENDS++++++++++++++++++++++++++++++ */
+
+
+
+
+/* ========================================================================================================= */
+/* ++++++++++++++++++++++++PRIVACY POLICY STARTS++++++++++++++++++++++++++++++ */
+
+
+.privacy-policy-data h1{
+    margin: 5rem 3rem 1rem;
+    font-size: 3rem;
+}
+.privacy-policy-data h2{
+    margin: 3rem 3rem 1rem;
+    font-size: 2.3rem;
+}
+.privacy-policy-data p{
+    margin: 1rem 3rem 1rem;
+    font-size: 1.8rem;
+}
+
+.privacy-policy-data ul li{
+    margin: 1rem 3rem 1rem;
+    font-size: 1.8rem;
+}
+
+
+
+/* ========================================================================================================= */
+/* ++++++++++++++++++++++++PRIVACY POLICY ENDS++++++++++++++++++++++++++++++ */
+
+
+
+/* ========================================================================================================= */
+/* ++++++++++++++++++++++++TERMS & CONDITIONS STARTS++++++++++++++++++++++++++++++ */
+
+
+.terms-conditions-data h2{
+    margin: 5rem 3rem 1rem;
+    font-size: 3rem;
+}
+.terms-conditions-data h3{
+    margin: 3rem 3rem 1rem;
+    font-size: 2.3rem;
+}
+.terms-conditions-data p{
+    margin: 1rem 3rem 1rem;
+    font-size: 1.8rem;
+}
+
+.terms-conditions-data ul li{
+    margin: 1rem 3rem 1rem;
+    font-size: 1.8rem;
+}
+
+
+
+/* ========================================================================================================= */
+/* ++++++++++++++++++++++++TERMS & CONDITIONS ENDS++++++++++++++++++++++++++++++ */
+
+
+
+
+/* ========================================================================================================= */
+/* ++++++++++++++++++++++++FOOTER START++++++++++++++++++++++++++++++ */
+
+
+.footer{
+    /* margin-top:5rem ; */
+    background-color: #50FD62;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+.footer h1{
+    margin: 3rem 0;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.footer p{
+    padding:1rem;
+    background-color:#6D6D6C;
+    font-weight:300;
+    text-align:center;
+    font-size: 1.4rem;
+    color: #fff;
+    width:100vw;
+}
+.footer p a{
+    font-weight:700;
+    text-decoration: none;
+    color: #000;
+}
+
+
+.footer-links ul{
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.footer-links ul li a{
+    font-weight:500;
+    text-decoration: none;
+    color: #000;
+    font-size: 1.6rem;
+}
+
+.footer-links ul li a:hover{
+    color: #fff;
+}
+
+.footer-icons{
+    gap: 3rem;
+    display: flex;
+    margin: 0 0 2rem;
+}
+
+.foot-icon{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0px 10px 0px 10px;
+    border: 1px solid #6D6D6C;
+    padding: 0.6rem;
+}
+
+.foot-icon:hover{
+    border: 1px solid #fff;
+}
+
+.footer-icon{
+    color:#000 ;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+
+
+@media(max-width:700px){
+
+    .footer p{
+        /* width:35rem; */
+        text-align: center;
+        padding: 1rem 4rem;
+    }
+    
+}
+
+
+/* ========================================================================================================= */
+/* ++++++++++++++++++++++++FOOTER ENDS++++++++++++++++++++++++++++++ */
+
+
+
+/* ========================================================================================================= */
+/* ++++++++++++++++++++++++ERROR PAGE STARTS++++++++++++++++++++++++++++++ */
+
+.error-page{
+    min-height: 80vh;
+}
+.error-page h1{
+    margin: 15rem 10rem 2rem;
+    font-size: 6rem;
+}
+.error-page h3{
+    margin: 2rem 10rem;
+    font-size: 4rem;
+}
+.error-page p{
+    margin: 2rem 10rem;
+    font-size: 2.5rem;
+}
+
+
+@media (max-width:700px) {
+    .error-page h1{
+        margin: 5rem 2rem 2rem;
+        font-size: 4rem;
+    }
+    .error-page h3{
+        margin: 2rem 2rem;
+        font-size: 2.5rem;
+    }
+    .error-page p{
+        margin: 2rem 2rem;
+        font-size: 1.7rem;
+    }
+    
+}
+
+
+/* ========================================================================================================= */
+/* ++++++++++++++++++++++++ERROR PAGE ENDS++++++++++++++++++++++++++++++ */

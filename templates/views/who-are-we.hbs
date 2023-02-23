@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum,scale=1">
+    {{>links}}
+    <title>Who Are We</title>
+
+</head>
+<body>
+
+    <div data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
+
+
+
+        {{>nav}}
+
+        <div class="common-header">
+            <div class="common-heading">
+                <h1>Who Are We</h1>
+            </div>
+        </div>
+
+    <!-- ============================================================================================================ -->
+
+
+        <div class="waw-main-para">
+            <p>Being in the business of bringing fresh fruit to the world, we know the importance of quality</p>
+        </div>
+
+
+   <section class="contact-info">
+
+        <div class="contact-left">
+
+            <div class="info">
+
+                <h2>Contact Information</h2>
+
+                <div class="ico-details">
+                    <ion-icon name="location-outline" class="contact-icon"></ion-icon>
+                    <p>Narkhed, DIST NAGPUR</p>
+                </div>
+                <div class="ico-details">
+                    <ion-icon name="call-outline" class="contact-icon"></ion-icon>
+                    <p>+91 9423605058</p>
+                </div>
+                <div class="ico-details">
+                    <ion-icon name="mail-outline" class="contact-icon"></ion-icon>
+                    <p>aarizgardenalfresh@gmail.com</p>
+                </div>
+                <div class="ico-details">
+                    <ion-icon name="business-outline" class="contact-icon"></ion-icon>
+                    <p>AARIZ GARDEN AL FRESH</p>
+                </div>
+
+            </div>
+
+        </div>
+        
+
+        <div class="contact-right">
+            <form class="contact-form-01" action="/contact-form" method="post">
+            <input type="text" class="contact-form-input" name="name" placeholder="Enter your name" required>
+            <input type="email" class="contact-form-input" name="email" placeholder="Enter email address" required>
+            <input type="text" class="contact-form-input" name="subject" placeholder="Enter your Subject of Message" required>
+            <textarea rows="8" class="contact-form-input" name="message" placeholder="Message"></textarea>
+            <button type="submit" class="contact-btn-01">Send</button>
+            
+            </form>
+        </div>
+
+
+    </section>
+
+
+
+
+
+    <!-- ============================================================================================================ -->
+
+    {{>footer}}
+    </div>
+
+    {{>script}}
+
+</body>
+</html>
