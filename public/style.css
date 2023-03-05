@@ -106,12 +106,22 @@ nav{
   nav .fa-solid{
     display: none;
   }
+
+  .logo-img-nav-01 img{
+    border-radius: 50%;
+    box-shadow: 1px 1px 10px black;
+  }
   
   @media(max-width:700px){
+
+    nav{
+        padding: 1% 6%;
+      }
 
     .nav-links ul li {
       display: block;
     }
+
     .nav-links{
       position: fixed;
       background-color:#50FD62;
@@ -148,7 +158,9 @@ nav{
 
 /* Desktop-Navigation Bar---------- */
 
-.nav-desktop{
+/* 
+
+    .nav-desktop{
     background-color: #000000;
     height: 7vh;
     position: sticky;
@@ -157,7 +169,7 @@ nav{
 }
 
 .nav-desktop .d-menu{
-    /* align-items: center; */
+   
     display: flex;
     justify-content: space-evenly;
     list-style: none;
@@ -207,13 +219,15 @@ nav{
     font-weight: 700;
 }
 .nl-img img{
-    /* transform: translateY(1.5em); */
+   
     width: 10rem;
     border-radius: 6rem;
     box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.363);
 }
 
-/* Mobile-Navigation Bar---------- */
+*/
+
+/* Mobile-Navigation Bar---------- 
 
 .nav-mobile{
     display: none;
@@ -306,6 +320,8 @@ nav{
 .display-flex{
     display: flex;
 }
+
+*/
 
 /* ========================================================================================================= */
 /* ++++++++++++++++++++++++NAVIGATION BAR ENDS++++++++++++++++++++++++++++++ */
